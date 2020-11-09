@@ -20,7 +20,6 @@ class FakeWeatherRepository implements WeatherRepository {
         if (random.nextBool()) {
           throw NetworkException();
         }
-        throw NetworkException();
 
         // Return "fetched" weather
         return Weather(
